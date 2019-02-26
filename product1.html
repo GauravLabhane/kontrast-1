@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Marit Creations</title>
+  
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+
+<style>
+
+
+.mySlides {display:none;}
+
+
+      .headings h1
+      { margin-top: 140px;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+      }
+      .navbar
+      {
+        min-height:100px;
+      }
+
+      .companyname
+      {
+        float: left;
+        padding-left: 15px;
+        vertical-align: center;
+      }
+
+      .navbar-brand
+      { height:80px;
+        padding-top: 0px;
+        font-size: xx-large;
+        padding-bottom: 0px;
+        vertical-align: justify;
+      }
+
+
+      .parent
+      {
+        min-height: 1000px;
+        background-color: #006670;
+        margin-top: 70px;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+
+      .child
+      { margin-top: 120px;
+        min-height: 850px;
+        border: 50px,5px;
+        border-style: solid;
+        border-radius: 10px;
+        border-color: #006670;
+        background-color: rgba(255,255,255,0.6);
+      }
+
+
+      .big-image img
+      {
+        max-height: 750px;
+        width: 80%;
+        margin-top: 7%;
+        margin-left: 10%;
+        display: none;
+        background-color: white;
+        border-radius: 15px;
+      }
+
+      .small-images
+      { 
+
+        margin-top: 100px;
+        padding : 10px; 
+        max-height: 700px;
+        margin: 5px;
+
+
+      }
+
+      .small-image img  
+      { 
+        margin: 10px;
+        border-radius: 15px;
+        max-height: 200px;
+        width: 100%;
+      }
+
+      /* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-left: 10%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: rgba(0,0,0,0.5);
+  font-weight: bolder;
+  font-size: 50px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 13%;
+
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  text-decoration: none;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.des1
+{
+min-height: 300px;
+background-color: #e6ffff;
+font-family: Actor;
+color: black;
+margin:100px 40px;
+border-radius: 0.3cm;
+border-color: #006670;
+padding: 20px;
+font-size: 16px;
+}
+
+
+</style>
+
+
+
+
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" id="navabr">
+  <!-- main navigation container-->
+  <div class="col-md-12">
+    <!-- Brand name-->
+    <div class=" companyname col-md-2 " style="line-height: 5px">
+      <h1 style=""><a class="navbar-brand" href="index.html">Marit Creations</a><h1>
+    </div>
+
+  
+    <!-- menu options-->
+    <div class="menu col-md-4">
+      
+       <ul class="nav navbar-nav">
+       
+              <li ><a href="index.html" style="padding-top: 30px;"><h4>Home</h4></a></li>
+              <li ><a href="Products.html" style="padding-top: 30px;"><h4>Products</h4></a></li>
+
+              <!-- products dropdown-->
+              <!-- <li class="dropdown">
+                 <a class="dropdown-toggle" data-toggle="dropdown" href="#"  style="padding-top: 30px;"><h4><span class="caret"></span></h4></a>
+
+
+                     <ul class="dropdown-menu">
+                         <li><a href="#">Tops</a></li>
+                         <li><a href="#">Suits</a></li>
+                         <li><a href="#">Dress</a></li>
+                       </ul>
+                  
+           </li> -->
+
+              <li><a href="index.html#viewall" style="padding-top: 30px; "><h4>About</h4></a></li>
+              <li><a href="index.html#contact" style="padding-top: 30px; "><h4>Contact</h4></a></li>
+         </ul>
+
+    </div>
+
+
+    <!-- Search bar-->
+   <div class="col-md-3">
+       <form class="navbar-form navbar-left" action="#">
+       <div class="input-group" style="padding-top: 30px;max-width: 100%;float: right;">
+        <input type="text" class="form-control" placeholder="Search" name="search">
+       <div class="input-group-btn">
+          <button class="btn btn-default" type="submit">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+        </div>
+        </div>
+      </form>
+      </div>
+
+
+              
+
+
+      <!-- cart signup login -->
+     <div class="col-md-1"></div>
+      <div class="col-md-2">
+
+      
+          <ul class="nav navbar-nav navbar-right">
+
+            
+            <li class="dropdown">
+              
+             <a class="dropdown-toggle" style="padding-top: 30px" data-toggle="dropdown" href="#"><span class="fa fa-user-circle user"></span> Hello User!</a>
+                     <ul class="dropdown-menu">
+                        <li><a href="Cart.html" style="padding-top: 30px;"><span class="glyphicon glyphicon-shopping-cart"></span> My Cart</a></li>
+                      <li><a href="Signup.html" style="padding-top: 30px;"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                      <li><a href="Login.html" style="padding-top: 30px;"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                      <li><a href="Admin_Login.html" style="padding-top: 30px;"><span class="glyphicon glyphicon-user"></span> Admin</a></li>
+                       </ul>
+                  
+        </li>
+            
+          </ul>
+      </div>
+</nav>  
+  
+
+
+
+
+<div class="parent col-md-12">
+            <!-- Images Display -->
+    <div class="child images col-md-8">
+        
+        <div class="big-image col-md-9 w3-content">
+            <a href="images/Dress 1_1.jpg"><img class="mySlides" src="images/Dress 1_1.jpg"></a>
+            <a href="images/Dress 1_2.jpg"><img class="mySlides" src="images/Dress 1_2.jpg"></a>
+            <a href="images/Dress 1_3.jpg"><img class="mySlides" src="images/Dress 1_3.jpg"></a>
+             <a class="prev" onclick="plusSlides(-1)">❮</a>
+             <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+
+
+
+        
+        <div class=" small-images col-md-2 w3-section">
+                <div class="small-image col-md-12 ">
+                     <img class="demo cursor" src="images/Dress 1_1.jpg" style="width:100%;cursor: pointer;" onclick="currentSlide(1)">
+                 </div>
+                <div class=" small-image col-md-12">
+                    <img class="demo cursor" src="images/Dress 1_2.jpg" style="width:100%;cursor: pointer;" onclick="currentSlide(2)">
+                 </div>
+                <div class="small-image col-md-12">
+                   <img class="demo cursor" src="images/Dress 1_3.jpg" style="width:100%;cursor: pointer;" onclick="currentSlide(3)">
+                </div>
+        </div>
+
+    </div>
+
+
+   
+  
+     <div class="child description col-md-4">
+     	<div class="des1"><br>
+     		<p><b>Pink Coloured Kurti</b></p>
+     		<p><b>Size</b> - M</p>
+     		<p><b>Price</b> - &#x20B9 450</p>
+     		<p><b>Colour</b> - Pink</p>
+     		<p><b>Material</b> - Cotton</p>
+     		<p><b>Features</b>:</p>
+     		<p>Crafted from cotton fabric, it is light in weight and will be soft against your skin. It's unique design and beautiful colour
+     		will fetch a lot of second glances. Tailored in regular fit, this kurti will keep you comfortable all day long. This is best suited for casual wear
+     		and you can pair it up with jeans or palazzo.</p>
+     		<br>
+     		<a href="" style="text-decoration: none;"><button class="add btn btn-md btn-default" style="float: center;width: 200px;display: block;margin: auto; ">Add to <span class="glyphicon glyphicon-shopping-cart"></span></button></a><br>
+     	</div>
+      
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+</body>
+</html>
